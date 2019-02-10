@@ -20,12 +20,28 @@
         top:10px;
         left:50%;
         background-color: green;
+        border-radius: 5px;
+    }
+    #score-board{
+        position: absolute;
+        color: red;
+    }
+    #instructions{
+        position:absolute;
+        padding-top: 20px;
+        width: 600px;
     }
     </style>
 </head>
 <body>
     <canvas></canvas>
-    <button id="b1">PLAY</button>
+    <div>
+        <p id="score-board">Current Score: 0</p>
+        <p id="instructions">Instructions: Click the button at the moment when all 3 balls meet to score. Reach score 10 to complete level 1.</p>
+        <button id="b1">PLAY</button>
+    </div>
+
+
     <script src="canvas.js"></script>
 </body>
 </html>
